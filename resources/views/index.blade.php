@@ -5,8 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="<?= asset('css/bootstrap.min.css') ?>">
-        <link rel="stylesheet" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
-        <!-- <link href="css/style.css" rel="stylesheet"> -->
+        
+        <!--Datatables Application css  -->
+         <link rel="stylesheet" href="<?= asset('app/lib/datatables/jquery.dataTables.min.css') ?>"> 
+        <link rel="stylesheet" href="<?= asset('app/lib/datatables/datatables.bootstrap.min.css') ?>">
+         <link rel="stylesheet" href="<?= asset('app/lib/datatables/angular-datatables.css') ?>"> 
+        
     </head>
     <body ng-controller="employeesController"  style="background-color:whitesmoke;">
     </style>
@@ -52,9 +56,8 @@
         <script src="<?= asset('app/controllers/employee.js') ?>"></script>
 
         <!--Data tables  -->
-        <script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+        <script src="<?= asset('app/lib/datatables/jquery.dataTables.min.js') ?>"></script>
         <script src="<?= asset('app/lib/datatables/angular-datatables.min.js') ?>"></script>
-        <link rel="stylesheet" href="<?= asset('app/lib/datatables/angular-datatables.css') ?>">
 
         <!--Modal Add/Update  -->
         <div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
