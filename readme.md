@@ -21,17 +21,17 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
 
-## Installation Laravel_Crud
+## Installation laravel_angular
 
 
 Clone the repo
 ```
-git clone https://github.com/kramzhels/laravel_crud.git
+git clone https://github.com/marcusaaronb/laravel_angularjs_crud.git
 ```
 
 Move to the newly created folder and install all dependencies:
 ```
-cd laravel_crud
+cd laravel_angular
 composer install
 ```
 
@@ -39,12 +39,6 @@ Create a new database, for example with phpMyAdmin. Then open the .env.example f
 ```
 php artisan migrate
 ```
-
-Now fill the tables:
-```
-php artisan db:seed
-```
-
 Finally, generate the application key 
 ```
 php artisan key:generate
@@ -56,7 +50,6 @@ Open your favorite browser and visit the newly created app.
 1. Create 
 2. Edit 
 3. Delete 
-4. Sweetalert pop-up
 
 ## Learning Laravel
 
