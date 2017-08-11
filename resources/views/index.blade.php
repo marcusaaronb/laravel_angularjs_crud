@@ -16,9 +16,9 @@
     </style>
         <div class="container">
             <center><h1>Basic Laravel 5.4 + AngularJS 1 CRUD</h1></center>
-            <div class="col col-md-12">
+            <div class="col col-md-12" ng-if="displayTable">
                 <div class="table-responsive">
-                    <table datatable="ng" class="table table-bordered table-hover table-striped row-border hover" >
+                      <!-- <table datatable="ng" class="table table-bordered table-hover table-striped row-border" >
                         <thead>
                             <tr>
                                 <td>ID</td>
@@ -42,7 +42,8 @@
                                 </td>
                             </tr>
                         </tbody>
-                    </table>        
+                    </table>           -->
+                     <table datatable="" dt-options="tOptions" dt-columns="dtColumns" class="row-border hover"></table> 
                 </div>
             </div>
         </div>
@@ -56,7 +57,7 @@
         <script src="<?= asset('app/controllers/employee.js') ?>"></script>
 
         <!--Data tables  -->
-        <script src="<?= asset('app/lib/datatables/jquery.dataTables.min.js') ?>"></script>
+        <script src="<?= asset('app/lib/datatables/jquery.dataTables.min.js') ?>"></script> 
         <script src="<?= asset('app/lib/datatables/angular-datatables.min.js') ?>"></script>
 
         <!--Modal Add/Update  -->
